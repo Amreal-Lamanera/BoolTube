@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoolTube</title>
+    <link rel="stylesheet" href="styleFlex.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="script.js"></script>
+</head>
+<body onload="chooseVideo(video)">
+    
+    <header>
+
+        <div class="barra-verticale">
+            <div class="menu">
+                <i class="fas fa-bars" id="navMen" onclick="Nav()"></i>
+            </div>
+
+            <!-- Menù di navigazione -->
+
+            <div id="myNav" class="overlay">
+                <a href="#">
+                    <i class="fas fa-home">
+                        <span>Home</span>
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-fire">
+                        <span>Tendenze</span>
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-folder">
+                        <span>Raccolta</span>
+                    </i>
+                </a>
+            </div>
+            <!-- FINE -->
+
+            <div class="sidebar">
+                <i class="fas fa-home">
+                    <span>Home</span>
+                </i>
+            </div>
+            <div class="sidebar">
+                <i class="fas fa-fire">
+                    <span>Tendenze</span>
+                </i>
+            </div>
+            <div class="sidebar">
+                <i class="fas fa-folder">
+                    <span>Raccolta</span>
+                </i>
+            </div>
+        </div>
+
+        <div class="barra-orizzontale">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.youtube.com/s/desktop/7bec1ddb/img/favicon_144x144.png" alt="Youtube Logo">
+                    <span>YouTube</span>
+                </a>
+                    
+            </div>
+            <div class="searchbar">
+                <div class="input-group">
+                    <input type="text" name="searchbar" placeholder="Cerca" />
+                    <div><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container video-page" id="myContainer">
+
+            <section class="content">
+
+                <iframe id="loadVideo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 id="descVid"></h2>
+
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
